@@ -27,7 +27,7 @@
             </thead>
 
             <tbody id="productBody">
-                <tr>
+                <!-- <tr>
                     <td><img src="https://via.placeholder.com/50"></td>
                     <td>iPhone 9</td>
                     <td>$549</td>
@@ -45,9 +45,19 @@
                         <button class="edit">Edit</button>
                         <button class="delete">Delete</button>
                     </td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
+    </section>
+
+    <section class="form">
+        <h3>Add / Edit Product</h3>
+        <input type="text" id="title" placeholder="Product Title">
+        <input type="text" id="category" placeholder="Category">
+        <input type="number" id="price" placeholder="Price">
+        <input type="file" id="image" accept="image/*">
+
+        <button onclick="addProduct()">Save Product</button>
     </section>
     
     <script src="assets/js/app.js"></script>
