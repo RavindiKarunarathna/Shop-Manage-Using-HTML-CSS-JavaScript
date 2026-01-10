@@ -102,4 +102,14 @@ async function addProduct() {
     document.getElementById("price").value = "";
 }
 
+// Edit product
+function editProduct(button) {
+    const row = button.parentElement.parentElement;
+
+    document.getElementById("title").value = row.children[1].textContent;
+    document.getElementById("price").value = row.children[2].textContent.replace("$", "");
+    document.getElementById("category").value = row.children[3].textContent;
+
+    editRow = row; // track the row being edited
+}
 
