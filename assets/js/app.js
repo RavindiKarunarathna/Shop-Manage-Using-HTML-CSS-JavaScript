@@ -113,3 +113,10 @@ function editProduct(button) {
     editRow = row; // track the row being edited
 }
 
+// Delete product
+function deleteProduct(button) {
+    if (confirm("Delete this product?")) {
+        const row = button.parentElement.parentElement;
+        row.remove();
+    }
+}
