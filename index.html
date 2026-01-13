@@ -1,11 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop Manage</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    
+    <header>
+        <h2>ShopManage</h2>
+        <span>Admin Panel</span>
+    </header>
+
+    <section class="content">
+        <h3>Product List</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="productBody">
+                <!-- <tr>
+                    <td><img src="https://via.placeholder.com/50"></td>
+                    <td>iPhone 9</td>
+                    <td>$549</td>
+                    <td>Smartphones</td>
+                    <td>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>MacBook Pro</td>
+                    <td>$1749</td>
+                    <td>Laptops</td>
+                    <td>
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </section>
+
+    <section class="form">
+        <h3>Add / Edit Product</h3>
+        <input type="text" id="title" placeholder="Product Title">
+        <input type="text" id="category" placeholder="Category">
+        <input type="number" id="price" placeholder="Price">
+        <input type="file" id="image" accept="image/*">
+
+        <button onclick="addProduct()">Save Product</button>
+    </section>
+
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>
